@@ -1,0 +1,7 @@
+
+customer_id,customer_name,city,amount
+1,Ravi,Hyderabad,2500
+2,,Chennai,1800
+3,Arun,,1500
+4,Sita,Hyderabad,4000
+5,,Bangalore,2200
