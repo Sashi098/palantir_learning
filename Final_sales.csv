@@ -1,0 +1,6 @@
+order_id,product,quantity,price,city,total_amount
+101,Laptop,2,50000.0,Hyderabad,100000.0
+102,Mouse,3,500.0,Chennai,1500.0
+103,Unknown,2,1500.0,Bangalore,3000.0
+105,Monitor,2,12000.0,Unknown,24000.0
+106,Mouse,3,500.0,Chennai,1500.0
