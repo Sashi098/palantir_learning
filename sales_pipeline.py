@@ -26,9 +26,19 @@ df["city"] = df["city"].fillna("Unknown")
 df = df.drop_duplicates(subset=["order_id"]).copy()
 
 #create calculated column
+
 df["total_amount"] = df["quantity"]* df["price"]
 
+print(" Total  sales_amount:", df["total_amount"].sum())
+
+print(df[["order_id","quantity", "price", "total_amount"]])
+
 print("Step-2: Data transformation completed")
+
+
+print("Missing prices:", df["price"].isna().sum())
+print("Negative quantities:", (df["quantity"]< 0).sum())
+print("Duplicate order IDs:", df["order_id"].duplicated().sum())
 
 #validated: check data quality
 valid = (
@@ -49,4 +59,4 @@ print("Rows ready to save:", len(df))
 df.to_csv("Final_sales.csv", index= False)
 
 print("Step-4 : Data daved to final_sales.csv")
-print("=== SALES ETL PIPELINE COMPLETED ===")
+print("=== SALES ETL PIPELINE COMPLETED ===") 
