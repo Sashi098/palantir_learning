@@ -1,0 +1,13 @@
+
+# Generated database
+retail_sales.db
+
+# Log files
+pipeline.log
+
+# Generated output
+cleaned_sales.csv
+
+# Python cache
+__pycache__/
+*.pyc
